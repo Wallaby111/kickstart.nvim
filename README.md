@@ -1,4 +1,4 @@
-# kickstart.nvim
+# Morgan's nvim config
 
 ## Introduction
 
