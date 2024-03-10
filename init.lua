@@ -254,6 +254,10 @@ require('lazy').setup({
       },
     },
   },
+  -- TODO: Create keybinds to open and close file tree with NvimTreeToggle command. Map to <Ctl + t> or something.
+  { 'nvim-tree/nvim-tree.lua', opts = {
+    sync_root_with_cwd = true,
+  } },
 
   -- NOTE: Plugins can also be configured to run lua code when they are loaded.
   --
