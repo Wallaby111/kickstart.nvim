@@ -187,6 +187,9 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+--  Keybind for NvimTreeToggle
+vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -254,7 +257,7 @@ require('lazy').setup({
       },
     },
   },
-  -- TODO: Create keybinds to open and close file tree with NvimTreeToggle command. Map to <Ctl + t> or something.
+  -- Open nvim tree with <leader>t defined above
   { 'nvim-tree/nvim-tree.lua', opts = {
     sync_root_with_cwd = true,
   } },
