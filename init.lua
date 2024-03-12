@@ -188,7 +188,7 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 --  Keybind for NvimTreeToggle
-vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
+vim.keymap.set('n', '<leader>T', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
