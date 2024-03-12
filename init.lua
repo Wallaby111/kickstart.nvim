@@ -257,10 +257,12 @@ require('lazy').setup({
       },
     },
   },
-  -- Open nvim tree with <leader>t defined above
+  -- Open nvim tree with <leader>T defined above
   { 'nvim-tree/nvim-tree.lua', opts = {
     sync_root_with_cwd = true,
   } },
+  -- LuaLine for a nicer status line
+  { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }, opts = { theme = 'tokyonight' } },
 
   -- NOTE: Plugins can also be configured to run lua code when they are loaded.
   --
