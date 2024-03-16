@@ -20,7 +20,6 @@
 =====================================================================
 =====================================================================
 What is Kickstart?
-
   Kickstart.nvim is *not* a distribution.
 
   Kickstart.nvim is a starting point for your own configuration.
@@ -188,7 +187,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 --  Keybind for NvimTreeToggle
 vim.keymap.set('n', '<leader>T', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
-vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Escape from insert mode easier' })
+vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Escape from insert mode easier' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
