@@ -19,7 +19,6 @@
 ========                                                     ========
 =====================================================================
 =====================================================================
-
 What is Kickstart?
 
   Kickstart.nvim is *not* a distribution.
@@ -189,6 +188,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 --  Keybind for NvimTreeToggle
 vim.keymap.set('n', '<leader>T', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
+vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Escape from insert mode easier' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -546,6 +546,7 @@ require('lazy').setup({
         pylsp = {},
         rust_analyzer = {},
         ocamllsp = {},
+        -- TODO: get bash, dockerfile, and yaml lsps working. Look in to markdown lsp/support
         -- bashls = {},
         -- dockerls = {},
         -- yamlls = {},
