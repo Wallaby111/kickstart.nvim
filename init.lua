@@ -262,6 +262,30 @@ require('lazy').setup({
   } },
   -- LuaLine for a nicer status line
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }, opts = { theme = 'tokyonight' } },
+  {
+    'nvim-neorg/neorg',
+    build = ':Neorg sync-parsers',
+    lazy = false, -- specify lazy = false because some lazy.nvim distributions set lazy = true by default
+    -- tag = "*",
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('neorg').setup {
+        load = {
+          ['core.defaults'] = {}, -- Loads default behaviour
+          ['core.concealer'] = {}, -- Adds pretty icons to your documents
+          ['core.summary'] = {}, -- Adds :Neorg generate-workspace-summary, allowing for auto-summary of workspace for table of contents
+          ['core.dirman'] = { -- Manages Neorg workspaces
+            config = {
+              workspaces = {
+                personal = '~/notes/personal',
+                school = '~/notes/school',
+              },
+            },
+          },
+        },
+      }
+    end,
+  },
 
   -- NOTE: Plugins can also be configured to run lua code when they are loaded.
   --
