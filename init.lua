@@ -149,6 +149,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
 
+-- Allows current directory to change on file open, good for NvimTree and Neorg dirman
+vim.opt.autochdir = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
