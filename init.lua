@@ -195,6 +195,9 @@ vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Escape from insert mode easier' })
 -- Keybinds for going forward and back in buffers
 vim.keymap.set('n', '<leader>b', ':bprevious<CR>', { desc = 'Go back one buffer' })
 vim.keymap.set('n', '<leader>u', ':bnext<CR>', { desc = 'Go to next buffer' })
+-- Keybinds for switching in to neorg notes
+vim.keymap.set('n', '<leader>np', ':Neorg workspace personal<CR>', { desc = 'Go to personal workspace in Neorg' })
+vim.keymap.set('n', '<leader>ns', ':Neorg workspace school<CR>', { desc = 'Go to school workspace in Neorg' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
