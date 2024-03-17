@@ -187,7 +187,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 --  Keybind for NvimTreeToggle
 vim.keymap.set('n', '<leader>T', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tree' })
+-- Keybind for easier escape from insert mode
 vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Escape from insert mode easier' })
+-- Keybinds for going forward and back in buffers
+vim.keymap.set('n', '<leader>b', ':bprevious<CR>', { desc = 'Go back one buffer' })
+vim.keymap.set('n', '<leader>u', ':bnext<CR>', { desc = 'Go to next buffer' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
