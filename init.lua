@@ -193,8 +193,8 @@ vim.keymap.set('n', '<leader>T', ':NvimTreeToggle<CR>', { desc = 'Toggle nvim tr
 -- Keybind for easier escape from insert mode
 vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Escape from insert mode easier' })
 -- Keybinds for going forward and back in buffers
-vim.keymap.set('n', '<leader>b', ':bprevious<CR>', { desc = 'Go back one buffer' })
-vim.keymap.set('n', '<leader>u', ':bnext<CR>', { desc = 'Go to next buffer' })
+vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Go one [b]uffer [p]revious' })
+vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Go one [b]uffer [n]ext' })
 -- Keybinds for switching in to neorg notes
 vim.keymap.set('n', '<leader>np', ':Neorg workspace personal<CR>', { desc = 'Go to personal workspace in Neorg' })
 vim.keymap.set('n', '<leader>ns', ':Neorg workspace school<CR>', { desc = 'Go to school workspace in Neorg' })
@@ -579,7 +579,7 @@ require('lazy').setup({
         pylsp = {},
         rust_analyzer = {},
         ocamllsp = {},
-        -- TODO: get bash, dockerfile, and yaml lsps working. Look in to markdown lsp/support
+        -- TODO: get bash, dockerfile, and yaml lsps working.
         -- bashls = {},
         -- dockerls = {},
         -- yamlls = {},
