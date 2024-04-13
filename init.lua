@@ -272,6 +272,7 @@ require('lazy').setup({
   } },
   -- LuaLine for a nicer status line
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }, opts = { theme = 'tokyonight' } },
+  { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
   {
     'nvim-neorg/neorg',
     build = ':Neorg sync-parsers',
@@ -662,6 +663,9 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         ocaml = { 'ocamlformat' },
+        rust = { 'rustfmt' },
+        c = { 'clang-format' },
+        go = { 'gofmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
