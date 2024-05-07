@@ -274,11 +274,15 @@ require('lazy').setup({
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }, opts = { theme = 'tokyonight' } },
   { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
   {
+    'vhyrro/luarocks.nvim',
+    priority = 1000,
+    config = true,
+  },
+  {
     'nvim-neorg/neorg',
-    build = ':Neorg sync-parsers',
     lazy = false, -- specify lazy = false because some lazy.nvim distributions set lazy = true by default
-    -- tag = "*",
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    version = '*',
+    dependencies = { 'luarocks.nvim' },
     config = function()
       require('neorg').setup {
         load = {
