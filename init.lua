@@ -844,7 +844,7 @@ require('lazy').setup({
         -- Autoinstall languages that are not installed
         auto_install = true,
         highlight = { enable = true },
-        indent = { enable = true, disable = { 'ocaml' } },
+        indent = { enable = true, disable = { 'ocaml', 'c' } },
       }
 
       -- There are additional nvim-treesitter modules that you can use to interact
