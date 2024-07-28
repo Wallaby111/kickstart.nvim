@@ -1,3 +1,4 @@
+# Depricated! Storing in single .config repo
 # Morgan's nvim config
 
 ## Introduction
